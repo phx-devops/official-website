@@ -1,0 +1,9 @@
+weight: 3
+title: "Scalability And Reliability"
+description: >
+  <ul class="list-style-none">
+    <li>Cloud-Native Solutions</li>
+    <li>High Availability</li>
+    <li>Performance Optimization</li>
+  </ul>
+image: "img/carousel/scalability-and-reliability.png"

@@ -1,0 +1,10 @@
+weight: 1
+title: "Security-first approach"
+description: >
+  <ul class="list-style-none">
+    <li>Day One Security</li>
+    <li>Continuous Security</li>
+    <li>Compliance by Design</li>
+  </ul>
+image: "img/carousel/security-first-approach.png"
+#href: "https://devcows.github.io/hugo-universal-theme/"

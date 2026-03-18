@@ -1,0 +1,8 @@
+weight: 4
+name: "DevSecOps Implementation"
+icon: "fas fa-lock"
+url: ""
+description: "Integration of security into development workflows.
+ Automated security testing in pipelines.
+ Security culture development.
+ Compliance automation."

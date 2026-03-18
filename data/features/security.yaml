@@ -1,0 +1,9 @@
+weight: 2
+name: "Security Integration"
+icon: "fas fa-shield-alt"
+url: ""
+description: "Static Application Security Testing (SAST).
+ Dynamic Application Security Testing (DAST).
+ Software Composition Analysis (SCA).
+ Infrastructure security scanning.
+ Secrets management and encryption."

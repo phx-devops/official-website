@@ -1,0 +1,9 @@
+weight: 2
+title: "Automation Excellence"
+description: >
+  <ul class="list-style-none">
+    <li>Infrastructure as Code</li>
+    <li>Pipeline Automation</li>
+    <li>Monitoring and Alerting</li>
+  </ul>
+image: "img/carousel/automation-excellence.png"

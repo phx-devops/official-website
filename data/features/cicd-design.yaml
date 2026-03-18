@@ -1,0 +1,6 @@
+weight: 1
+name: "CI/CD Pipeline Design"
+icon: "fas fa-cogs"
+url: ""
+description: "Custom pipeline creation using industry-leading tools (Jenkins, GitLab CI, GitHub Actions, etc.).
+Multi-environment deployment strategies. Containerization and orchestration (Docker, Kubernetes)."
