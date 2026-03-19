@@ -53,6 +53,6 @@ Yes, including:
 ## How can I contact you?
 
 - Email: support@phxdevops.com
-- Phone: +1 (602) 738-6626
+- Phone: +1.602.738.6626
 - Website: https://www.phxdevops.com
 

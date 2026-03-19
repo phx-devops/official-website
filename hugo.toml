@@ -20,7 +20,7 @@ imagePreview = true
     #     shortname = "devcows"
     # Enable Google Analytics by entering your tracking code
     [services.googleAnalytics]
-        id = "387741945"
+        id = "G-W108NZ6XSN"
 
 # Define the number of posts per page
 [pagination]
@@ -391,7 +391,7 @@ imagePreview = true
 [[menu.topbar]]
     weight = 1
     name = "Phone"
-    url = "tel:+1 602.738.6626"
+    url = "tel:+1.602.738.6626"
     pre = "<i class='fas fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
@@ -432,7 +432,10 @@ imagePreview = true
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
     enableGoogleMaps = true
-    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+    #localhost
+    #googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+    #https://*.phxdevops.com/.*
+    googleMapsApiKey = "AIzaSyCdfXBT8w3On93zMIyJ-CiyT4YqFp707Zw"
 
     latitude = "47.58173449405335"
     longitude = "-122.03925230073709"
@@ -503,9 +506,9 @@ imagePreview = true
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on +602.738.6626 or support@phxdevops.com.</p>
-      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+    text = """<p class="hidden-sm hidden-xs">Contact us on +1.602.738.6626 or support@phxdevops.com.</p>
+      <p class="hidden-md hidden-lg"><a href="tel:+1.602.738.6626" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+      <a href="mailto:support@phxdevops.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
 
