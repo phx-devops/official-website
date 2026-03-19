@@ -434,8 +434,6 @@ imagePreview = true
     enableGoogleMaps = true
     #localhost
     #googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
-    #https://*.phxdevops.com/.*
-    googleMapsApiKey = "AIzaSyCdfXBT8w3On93zMIyJ-CiyT4YqFp707Zw"
 
     latitude = "47.58173449405335"
     longitude = "-122.03925230073709"
