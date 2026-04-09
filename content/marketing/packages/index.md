@@ -1,6 +1,7 @@
 ---
 title: "DevOps Services, Training & Best Practices"
 draft: false
+keywords: ["DevOps services", "CI/CD optimization", "security best practices", "infrastructure as code", "observability", "Phoenix DevOps"]
 ---
 
 Phoenix DevOps focuses on delivering high-impact services that follow DevOps best practices in CI/CD, security, infrastructure, monitoring, training, and implementation. Our packages are designed to help teams move faster, stay secure, and run reliable systems — whether you’re a non-profit (free of cost) or a for-profit organization.

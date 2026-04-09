@@ -1,6 +1,7 @@
 +++
 title = "Continuous Integration / Continuous Deployment (CI/CD) Tools"
 facebook_author = "Anand Vijayan"
+keywords = ["CI/CD tools", "Jenkins", "GitLab CI/CD", "GitHub Actions", "CircleCI", "Azure DevOps", "pipeline automation", "DevOps toolchain", "SAST", "DAST"]
 +++
 
 ## Jenkins

@@ -1,6 +1,7 @@
 +++
 title = "Monitoring and Observability"
 facebook_author = "Anand Vijayan"
+keywords = ["monitoring", "observability", "Prometheus", "Grafana", "ELK stack", "Datadog", "New Relic", "APM", "distributed tracing", "log analytics"]
 +++
 
 ## Prometheus

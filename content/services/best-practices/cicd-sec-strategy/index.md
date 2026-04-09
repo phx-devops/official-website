@@ -1,6 +1,7 @@
 +++
 title = "CI/CD Security Strategy: Best Practices and Success Framework"
 facebook_author = "Anand Vijayan"
+keywords = ["CI/CD security", "DevSecOps strategy", "pipeline security", "SAST DAST SCA", "artifact integrity", "repository protection", "secure code pipelines", "security automation"]
 +++
 
 Implementing a robust CI/CD security strategy requires a comprehensive approach that integrates security controls throughout the entire software delivery lifecycle. Below, we expand on key best practices and provide a strategic framework for success.

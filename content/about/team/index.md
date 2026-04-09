@@ -1,6 +1,7 @@
 ---
 title: "Our Team"
 draft: false
+keywords: ["DevOps team", "technical leadership", "CI/CD experts", "DevSecOps professionals", "automation consultants", "infrastructure engineers", "cloud specialists"]
 ---
 
 # Meet the Team

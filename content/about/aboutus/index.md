@@ -1,6 +1,7 @@
 ---
 title: "About Us"
 draft: false
+keywords: ["DevOps company", "DevSecOps training", "automation consulting", "CI/CD best practices", "IT operations optimization"]
 ---
 
 **Mission:** *Delivering DevOps automation and training solutions to customers so that they can focus on what matters.*

@@ -2,6 +2,7 @@
 title: "Intermediate DevOps Training"
 date: 2026-03-03
 draft: false
+keywords: ["intermediate devops training", "cloud infrastructure automation", "devsecops", "kubernetes monitoring", "dora metrics", "pipeline optimization", "gitlab ci", "jenkins pipeline", "service mesh", "observability"]
 ---
 
 This intermediate-level training program builds on foundational DevOps knowledge, diving deeper into advanced practices, cloud infrastructure automation, and DevSecOps. Designed for participants with basic DevOps experience, this 4-week program combines theoretical learning with hands-on labs.
