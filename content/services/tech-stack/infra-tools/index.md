@@ -1,6 +1,7 @@
 +++
 title = "Infrastructure Tools"
 facebook_author = "Anand Vijayan"
+keywords = ["infrastructure tools", "Terraform", "Ansible", "Kubernetes", "Docker", "IaC", "cloud automation", "multi-cloud", "container orchestration", "config management"]
 +++
 
 ## Terraform

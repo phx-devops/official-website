@@ -1,6 +1,7 @@
 +++
 title = "Security Tools"
 facebook_author = "Anand Vijayan"
+keywords = ["security tools", "static application security testing", "SAST", "DAST", "SCA", "secret management", "vulnerability scanning", "DevSecOps", "pipeline security", "code analysis"]
 +++
 
 ## SonarQube

@@ -156,28 +156,51 @@ imagePreview = true
 
 [[menu.main]]
     name       = "Training"
-    identifier = "section.training"
-    url        = ""
-    weight     = 4
-    post       = 4
+    identifier = "menu.training"
+    url        = "/img/training.png"
+    weight     = 3
 
 [[menu.main]]
     name       = "Basic"
+    identifier = "section.basic"
+    url        = ""
+    weight     = 1
+    parent     = "menu.training"
+    post       = 1
+
+[[menu.main]]
+    name       = "Basic DevOps Training"
     url        = "/training/basic"
     weight     = 1
-    parent     = "section.training"
+    parent     = "section.basic"
 
 [[menu.main]]
     name       = "Intermediate"
-    url        = "/training/intermediate"
+    identifier = "section.intermediate"
+    url        = ""
     weight     = 2
-    parent     = "section.training"
+    parent     = "menu.training"
+    post       = 1
+
+[[menu.main]]
+    name       = "Intermediate DevOps Training"
+    url        = "/training/intermediate"
+    weight     = 1
+    parent     = "section.intermediate"
 
 [[menu.main]]
     name       = "Advanced"
+    identifier = "section.advanced"
+    url        = ""
+    weight     = 1
+    parent     = "menu.training"
+    post       = 2
+
+[[menu.main]]
+    name       = "Advanced DevOps Training"
     url        = "/training/advanced"
-    weight     = 3
-    parent     = "section.training"
+    weight     = 1
+    parent     = "section.advanced"
 
 [[menu.main]]
     name       = "Portfolio"
@@ -265,9 +288,9 @@ imagePreview = true
     name       = "Marketing"
     identifier = "section.marketing"
     url        = ""
-    weight     = 3
+    weight     = 1
     parent     = "menu.portfolio"
-    post       = 2
+    post       = 1
 
 [[menu.main]]
     name       = "Packages"
@@ -581,3 +604,12 @@ imagePreview = true
     category = "categories"
     tag = "tags"
     author = "authors"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5

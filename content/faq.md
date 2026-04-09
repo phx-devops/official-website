@@ -2,7 +2,7 @@
 title = "FAQ"
 description = "Frequently asked questions"
 type = "page"
-keywords = ["FAQ","How do I","questions","what if"]
+keywords = ["FAQ", "DevOps FAQs", "CI/CD questions", "DevSecOps guidance", "automation support", "security best practices", "pipeline implementation", "phoenix devops"]
 +++
 
 # Frequently Asked Questions

@@ -1,10 +1,12 @@
 +++
 title = "DevOps and CI/CD Security: Why It Matters on Day One"
 date = "2026-03-06T12:47:08+02:00"
-tags = ["devops", "ai", "security", "devsecops", "cicd"]
-categories = ["engineering", "DevOps"]
+description = "Explore how AI is transforming DevOps and why implementing CI/CD security from day one is crucial. Learn about DevSecOps practices, automation, and protecting your pipeline in an AI-accelerated development world."
+tags = ["devops", "ai", "security", "devsecops", "cicd", "automation", "ci/cd security", "ai devops", "pipeline security", "continuous integration", "continuous deployment", "phoenix devops"]
+categories = ["engineering", "DevOps", "Security", "AI", "DevSecOps"]
 banner = "img/banners/devops-with-ai.jpg"
 facebook_author = "Anand Vijayan"
+keywords = ["devops security", "ci/cd security", "devsecops", "ai devops", "pipeline security", "continuous integration", "continuous deployment", "automation", "phoenix devops"]
 +++
 
 ![AI Accelerated DevOps, CI/CD Security](featured.jpg)

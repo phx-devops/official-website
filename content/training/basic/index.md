@@ -2,6 +2,7 @@
 title: "Basic DevOps Training Schedule"
 date: 2026-03-03
 draft: false
+keywords: ["devops training", "basic devops", "ci/cd pipelines", "infrastructure automation", "git", "docker", "kubernetes", "security", "phoenix devops"]
 ---
 
 This 3-day training program provides foundational knowledge in DevOps, infrastructure automation, and pipeline security. Each day includes hands-on exercises and practical examples.
