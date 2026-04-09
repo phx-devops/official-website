@@ -332,6 +332,8 @@ export async function callLLM(prompt: string, model = 'gpt-3.5-turbo'): Promise&
 
 </div>
 
+</div>
+
 ### 3.5 Cross-provider comparison metric
 
 - **Normalize to "tokens per second" and "cost per 1k tokens"**: Create standardized metrics to compare AI providers fairly. Calculate throughput in tokens processed per second, and cost efficiency in dollars per thousand tokens. Example: GPT-4 costs $0.03 per 1K tokens while Claude costs $0.015 per 1K tokens, making Claude 50% cheaper for the same capability.
