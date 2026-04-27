@@ -462,7 +462,7 @@ imagePreview = true
     longitude = "-122.03925230073709"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "blue"
+    style = "liquidice"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -478,8 +478,8 @@ imagePreview = true
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
-    formspree_action = ""
-    contact_form_ajax = false
+    formspree_action = "https://formspree.io/f/xyklarbg"
+    contact_form_ajax = true
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
     # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
@@ -509,7 +509,7 @@ imagePreview = true
     disabled_logo = false
     logo_text = "Universal"
 
-    logo = "img/phx-devops-logo-small.png"
+    logo = "img/phx-devops-liquid-ice-small.png"
     logo_small = "img/phx-devops-logo.png"
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Phoenix DevOps</strong>
@@ -557,8 +557,8 @@ imagePreview = true
     # For more information take a look at the README.
     enable = true
     auto_play = true
-    slide_speed = 2000
-    pagination_speed = 1000
+    slide_speed = 8000
+    pagination_speed = 4000
 
 [params.features]
     enable = true
