@@ -4,7 +4,6 @@ date = "2026-03-30T15:58:08+02:00"
 description = "A comprehensive guide to monitoring AI systems, tracking tokens across providers like OpenAI and Anthropic, and minimizing costs with FinOps and LLM Ops strategies. Includes practical examples with LangChain, LangGraph, and vanilla implementations."
 tags = ["devops", "ai", "monitoring", "finops", "llmops", "aiops", "observability", "token tracking", "cost control", "llm", "openai", "anthropic", "langchain", "langgraph", "prometheus", "grafana", "phoenix devops"]
 categories = ["AI", "Monitoring", "DevOps", "FinOps", "LLMOps"]
-weight = 10
 banner = "img/banners/monitoring-ai.jpg"
 facebook_author = "Anand Vijayan"
 keywords = ["ai monitoring", "token tracking", "cost optimization", "llm ops", "finops", "devops", "phoenix devops", "ai infrastructure", "observability", "prometheus", "grafana"]
