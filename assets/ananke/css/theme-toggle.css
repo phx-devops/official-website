@@ -69,3 +69,79 @@ html[data-theme="dark"] main .b--light-gray,
 html[data-theme="dark"] main .b--black-10 {
 	border-color: #465157;
 }
+
+.services-carousel {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	width: 70%;
+	max-height: 24rem;
+	margin-inline: auto;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+
+.services-carousel-heading {
+	font-size: 1.525rem;
+}
+
+.services-carousel-header {
+	width: 70%;
+	margin-inline: auto;
+}
+
+.services-carousel > a {
+	flex: 0 0 auto;
+	width: 100%;
+	scroll-snap-align: start;
+	padding: 1rem 1.25rem;
+}
+
+.services-carousel > a:hover,
+.services-carousel > a:focus-visible {
+	text-decoration: none;
+}
+
+.services-carousel-control {
+	display: inline-grid;
+	width: 2.5rem;
+	height: 2.5rem;
+	place-items: center;
+	border: 1px solid #aeb8bd;
+	border-radius: 50%;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.services-carousel-control:hover,
+.services-carousel-control:focus-visible {
+	background: #e5edef;
+}
+
+.services-carousel-control:focus-visible,
+.services-carousel:focus-visible {
+	outline: 2px solid #168b9a;
+	outline-offset: 3px;
+}
+
+html[data-theme="dark"] .services-carousel > a {
+	background-color: #20272b;
+	border-color: #465157;
+	color: #e7edf0;
+}
+
+html[data-theme="dark"] .services-carousel-control:hover,
+html[data-theme="dark"] .services-carousel-control:focus-visible {
+	background: #303b41;
+}
+
+@media (max-width: 40rem) {
+	.services-carousel,
+	.services-carousel-header {
+		width: 100%;
+	}
+}

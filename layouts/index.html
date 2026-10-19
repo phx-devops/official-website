@@ -108,6 +108,9 @@
           {{ range . }}
             <article class="w-100 flex-shrink-0 pa2" style="flex: 0 0 100%; scroll-snap-align: start;">
               <a class="db bg-white h-100 pa3 pa4-ns link near-black" href="{{ .RelPermalink }}">
+                  {{ with .Params.banner }}
+                    <img class="db w-100 mb3" style="aspect-ratio: 3/2; object-fit: cover;" src="{{ urls.RelURL . }}" alt="{{ $.Title }}" loading="lazy">
+                  {{ end }}
                   <time class="f6 mid-gray db mb2" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
                   <h3 class="f3 mt0 mb2">{{ .Title }}</h3>
                   <p class="lh-copy mb0">{{ .Summary | plainify }}</p>
