@@ -1,0 +1,57 @@
+{{ define "main" }}
+  <article class="cf pa3 pa4-ns nested-copy-line-height">
+    <section class="ph3 ph5-l pv3 pv4-l f4 center measure-wide lh-copy nested-links mid-gray">
+      <h1 class="f2 near-black">{{ .Title }}</h1>
+      {{ with .Content }}{{ . }}{{ end }}
+    </section>
+
+    <div class="mw8 center ph3 ph4-ns">
+      {{ $groups := slice
+        (dict "title" "Technology Stack" "prefix" "services/tech-stack/")
+        (dict "title" "Best Practices" "prefix" "services/best-practices/")
+      }}
+      {{ range $group := $groups }}
+        {{ $pages := slice }}
+        {{ range site.RegularPages }}
+          {{ if strings.HasPrefix .File.Dir $group.prefix }}
+            {{ $pages = $pages | append . }}
+          {{ end }}
+        {{ end }}
+        {{ $pages = sort $pages "LinkTitle" }}
+        {{ if $pages }}
+            {{ $carouselID := printf "services-carousel-%s" (urlize $group.title) }}
+            <section class="pv4" aria-labelledby="{{ $carouselID }}-heading">
+              <div class="services-carousel-header flex items-center justify-between mb3">
+                <h4 class="services-carousel-heading mt0 mb0" id="{{ $carouselID }}-heading">{{ $group.title }}</h4>
+              </div>
+              <div class="services-carousel" id="{{ $carouselID }}" role="region" aria-label="{{ $group.title }} articles" tabindex="0">
+                {{ range $pages }}
+                  <a class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link ph3 pv2" href="{{ .RelPermalink }}">
+                    <strong class="db f5 mb1">{{ .LinkTitle }}</strong>
+                    {{ with .Description }}<span class="db f6 lh-copy">{{ . }}</span>{{ end }}
+                  </a>
+                {{ end }}
+              </div>
+            </section>
+        {{ end }}
+      {{ end }}
+    </div>
+  </article>
+
+  <script>
+    (function () {
+      document.querySelectorAll("[data-carousel][data-direction]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var carousel = document.getElementById(button.dataset.carousel);
+          if (!carousel) return;
+          var firstBubble = carousel.querySelector("a");
+          var step = firstBubble ? firstBubble.getBoundingClientRect().height + 12 : carousel.clientHeight;
+          carousel.scrollBy({
+            top: step * Number(button.dataset.direction),
+            behavior: "smooth"
+          });
+        });
+      });
+    })();
+  </script>
+{{ end }}

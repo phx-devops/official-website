@@ -6,6 +6,7 @@ keywords = ["CI/CD security", "DevSecOps strategy", "pipeline security", "SAST D
 
 Implementing a robust CI/CD security strategy requires a comprehensive approach that integrates security controls throughout the entire software delivery lifecycle. Below, we expand on key best practices and provide a strategic framework for success.
 
+<!--more-->
 ## 1. Secure Code Repository
 Establishing a secure foundation starts with protecting your source code repository. This involves implementing multiple layers of security controls to prevent unauthorized access and ensure code integrity.
 

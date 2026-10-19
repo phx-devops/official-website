@@ -1,8 +1,8 @@
 # Phoenix DevOps Official Website
 
-[![Hugo](https://img.shields.io/badge/Hugo-0.157.0-blue.svg)](https://gohugo.io)
-[![Node.js](https://img.shields.io/badge/Node.js-24.14.0-green.svg)](https://nodejs.org)
-[![Go](https://img.shields.io/badge/Go-1.26.1-blue.svg)](https://golang.org)
+[![Hugo](https://img.shields.io/badge/Hugo-0.168.0-blue.svg)](https://gohugo.io)
+[![Node.js](https://img.shields.io/badge/Node.js-24.22.0-green.svg)](https://nodejs.org)
+[![Go](https://img.shields.io/badge/Go-1.27.2-blue.svg)](https://golang.org)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-orange.svg)](https://workers.cloudflare.com)
 
 The official website for Phoenix DevOps, a leading provider of DevOps, AI operations, and cloud infrastructure services. Built with Hugo and deployed on Cloudflare Workers.
@@ -20,11 +20,11 @@ The official website for Phoenix DevOps, a leading provider of DevOps, AI operat
 
 ## 🛠️ Tech Stack
 
-- **Static Site Generator**: [Hugo](https://gohugo.io) v0.157.0
+- **Static Site Generator**: [Hugo](https://gohugo.io) v0.168.0
 - **Theme**: [Universal Theme](https://themes.gohugo.io/hugo-universal-theme/)
 - **Deployment**: [Cloudflare Workers](https://workers.cloudflare.com)
 - **Analytics**: Google Analytics (G-W108NZ6XSN)
-- **Build Tools**: Node.js 24.14.0, Go 1.26.1, Dart Sass 1.98.0
+- **Build Tools**: Node.js 24.22.0, Go 1.27.2, Dart Sass 1.105.2
 
 ## 📁 Project Structure
 
@@ -56,9 +56,9 @@ official-website/
 
 ### Prerequisites
 
-- [Hugo](https://gohugo.io/getting-started/installing/) v0.157.0 or later
-- [Node.js](https://nodejs.org/) v24.14.0 or later
-- [Go](https://golang.org/dl/) v1.26.1 or later
+- [Hugo](https://gohugo.io/getting-started/installing/) v0.168.0 or later
+- [Node.js](https://nodejs.org/) v24.22.0 or later
+- [Go](https://golang.org/dl/) v1.27.2 or later
 - [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/) (for deployment)
 
 ### Local Development

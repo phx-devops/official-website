@@ -4,6 +4,9 @@ facebook_author = "Anand Vijayan"
 keywords = ["infrastructure tools", "Terraform", "Ansible", "Kubernetes", "Docker", "IaC", "cloud automation", "multi-cloud", "container orchestration", "config management"]
 +++
 
+Infrastructure tools help teams provision, configure, deploy, and manage the computing resources and platforms that applications depend on, from cloud services to containers and clusters.
+
+<!--more-->
 ## Terraform
 - Infrastructure as Code (IaC) tool for provisioning and managing cloud resources
 - Supports multiple cloud providers with a unified configuration language

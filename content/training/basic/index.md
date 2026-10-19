@@ -7,6 +7,13 @@ keywords: ["devops training", "basic devops", "ci/cd pipelines", "infrastructure
 
 This 3-day training program provides foundational knowledge in DevOps, infrastructure automation, and pipeline security. Each day includes hands-on exercises and practical examples.
 
+## Program Overview
+- **Duration:** 3 days (24 hours total)
+- **Format:** Online sessions with live instruction, labs, and Q&A
+- **Prerequisites:** Basic understanding of computer concepts, version control, and some coding experience
+- **Objectives:** Introduces the practices and tools behind a modern DevOps workflow through practical, hands-on exercises
+
+<!--more-->
 ## Day 1: DevOps Fundamentals
 
 **Duration:** 8 hours (9 AM - 5 PM)

@@ -1,6 +1,6 @@
 ---
 title: "Intermediate DevOps Training"
-date: 2026-03-03
+date: 2026-03-02
 draft: false
 keywords: ["intermediate devops training", "cloud infrastructure automation", "devsecops", "kubernetes monitoring", "dora metrics", "pipeline optimization", "gitlab ci", "jenkins pipeline", "service mesh", "observability"]
 ---
@@ -8,11 +8,12 @@ keywords: ["intermediate devops training", "cloud infrastructure automation", "d
 This intermediate-level training program builds on foundational DevOps knowledge, diving deeper into advanced practices, cloud infrastructure automation, and DevSecOps. Designed for participants with basic DevOps experience, this 4-week program combines theoretical learning with hands-on labs.
 
 ## Program Overview
-- **Duration:** 4 weeks (20 hours total)
+- **Duration:** 4 weeks (160 hours total)
 - **Format:** Online sessions with live instruction, labs, and Q&A
 - **Prerequisites:** Basic understanding of DevOps concepts, version control, and CI/CD
 - **Objectives:** Master advanced DevOps workflows, automate complex cloud infrastructures, and integrate security throughout the pipeline
 
+<!--more-->
 ## Week 1: Advanced DevOps Practices
 **Focus:** Deepening DevOps culture and advanced pipeline techniques
 

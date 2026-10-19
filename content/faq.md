@@ -13,7 +13,7 @@ Phoenix DevOps is a DevOps automation company focused on implementing CI/CD secu
 
 ## What is your mission?
 
-Our mission is to empower organizations with CI/CD security and automation strategy from day one, ensuring that security and automation are foundational elements of every DevOps pipeline rather than afterthoughts.
+Delivering DevOps automation and training solutions to customers so that they can focus on what matters.
 
 ## What services do you offer?
 
@@ -52,7 +52,5 @@ Yes, including:
 
 ## How can I contact you?
 
-- Email: support@phxdevops.com
-- Phone: +1.602.738.6626
-- Website: https://www.phxdevops.com
+Email: support@phxdevops.com
 

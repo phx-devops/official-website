@@ -1,0 +1,42 @@
+<footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex flex-column flex-row-ns items-center justify-between">
+    <a class="f6 f4-ns fw4 hover-white white-70 pv2 ph3 no-underline" href="{{ .Site.Home.Permalink }}">
+      &copy; {{ with .Site.Copyright | compare.Default .Site.Title }}{{ . | safe.HTML }} {{ now.Format "2006" }}{{ end }}
+    </a>
+    <div class="footer-actions flex items-center">
+      <div>{{ partials.IncludeCached "social/follow.html" . }}</div>
+      <button class="theme-toggle ml3" type="button" aria-label="Switch to dark theme" title="Switch to dark theme" aria-pressed="false">
+        <svg class="theme-toggle-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
+        <svg class="theme-toggle-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
+      </button>
+    </div>
+  </div>
+</footer>
+<script>
+  (function () {
+    "use strict";
+    var root = document.documentElement;
+    var button = document.querySelector(".theme-toggle");
+
+    function setTheme(theme) {
+      var isDark = theme === "dark";
+      root.dataset.theme = isDark ? "dark" : "light";
+      if (!button) return;
+      var label = isDark ? "Switch to light theme" : "Switch to dark theme";
+      button.setAttribute("aria-label", label);
+      button.setAttribute("title", label);
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    if (button) {
+      setTheme(root.dataset.theme);
+      button.addEventListener("click", function () {
+        var theme = root.dataset.theme === "dark" ? "light" : "dark";
+        setTheme(theme);
+        try {
+          localStorage.setItem("phxdevops-theme", theme);
+        } catch (error) {}
+      });
+    }
+  })();
+</script>

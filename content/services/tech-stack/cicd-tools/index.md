@@ -4,6 +4,10 @@ facebook_author = "Anand Vijayan"
 keywords = ["CI/CD tools", "Jenkins", "GitLab CI/CD", "GitHub Actions", "CircleCI", "Azure DevOps", "pipeline automation", "DevOps toolchain", "SAST", "DAST"]
 +++
 
+CI/CD tools automate the process of building, testing, and delivering software, helping teams release changes more frequently and reliably. Options such as Jenkins, GitHub Actions, GitLab CI/CD, CircleCI, Azure DevOps, and Argo CD support workflows ranging from automated testing to Kubernetes deployments.
+
+<!--more-->
+
 ## Jenkins
 - Open-source automation server with extensive plugin ecosystem for customization
 - Supports complex, multi-stage pipelines with parallel execution

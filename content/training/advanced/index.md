@@ -1,6 +1,6 @@
 ---
 title: "Advanced DevOps Training"
-date: 2026-03-03
+date: 2026-03-01
 draft: false
 keywords: ["advanced DevOps training", "enterprise DevOps", "cloud infrastructure automation", "DevSecOps certification", "kubernetes service mesh"]
 ---
@@ -8,11 +8,12 @@ keywords: ["advanced DevOps training", "enterprise DevOps", "cloud infrastructur
 This advanced-level training program is designed for experienced DevOps professionals seeking to master cutting-edge practices in advanced DevOps, container orchestration, and AI-driven operations including FinOps and MLOps. This 5-week intensive program combines deep technical dives with strategic insights.
 
 ## Program Overview
-- **Duration:** 5 weeks (25 hours total)
+- **Duration:** 5 weeks (200 hours total)
 - **Format:** Online sessions with expert-led instruction, advanced labs, and case studies
 - **Prerequisites:** Intermediate DevOps knowledge, experience with CI/CD and cloud platforms
 - **Objectives:** Master advanced DevOps architectures, container orchestration at scale, and leverage AI for operational efficiency
 
+<!--more-->
 ## Week 1: Advanced DevOps Architectures
 **Focus:** Enterprise-scale DevOps patterns and advanced automation
 

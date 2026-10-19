@@ -4,6 +4,9 @@ facebook_author = "Anand Vijayan"
 keywords = ["security tools", "static application security testing", "SAST", "DAST", "SCA", "secret management", "vulnerability scanning", "DevSecOps", "pipeline security", "code analysis"]
 +++
 
+Security tools help teams find and reduce vulnerabilities in code, applications, dependencies, and infrastructure, while protecting sensitive data such as credentials throughout the software delivery lifecycle.
+
+<!--more-->
 ## SonarQube
 - Comprehensive static code analysis for over 25 programming languages
 - Quality gates to enforce code standards and security policies

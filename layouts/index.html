@@ -1,0 +1,138 @@
+{{ define "main" }}
+  {{ with .Content }}
+    <section class="ph3 ph5-l pv4 center measure-wide nested-links lh-copy">
+      {{ . }}
+    </section>
+  {{ end }}
+
+  {{ with site.Data.carousel }}
+    <section class="ph3 ph4-ns pv5 bg-light-gray">
+      <div class="mw8 center">
+        <h2 class="f2 mt0 mb4 tc">A better way to build and deliver software</h2>
+        <div class="flex flex-column">
+          {{ range sort . "weight" }}
+            <article class="w-100 pa2">
+              <div class="h-100 bg-white">
+                {{ with .image }}
+                  <img class="db w-100" style="aspect-ratio: 3 / 2; object-fit: contain;" src="{{ urls.RelURL . }}" loading="lazy">
+                {{ end }}
+                <div class="pa3">
+                  <h3 class="f3 mt0 mb2">{{ .title }}</h3>
+                  <div class="lh-copy nested-links">{{ .description | safeHTML }}</div>
+                </div>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with site.Data.features }}
+    <section class="ph3 ph4-ns pv5">
+      <div class="mw8 center">
+        <h2 class="f2 mt0 mb4 tc">Services and capabilities</h2>
+        <div class="flex flex-wrap">
+          {{ range sort . "weight" }}
+            <article class="w-100 w-50-ns pa3">
+              <div class="h-100 pa3 ba b--light-gray">
+                <h3 class="f3 mt0 mb2">{{ .name }}</h3>
+                <div class="lh-copy nested-links">{{ .description | markdownify }}</div>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with site.Data.testimonials }}
+    <section class="ph3 ph4-ns pv5 bg-light-gray">
+      <div class="mw8 center">
+        <h2 class="f2 mt0 mb4 tc">What our clients say</h2>
+        <div class="flex flex-wrap">
+          {{ range . }}
+            <article class="w-100 w-50-l pa2">
+              <blockquote class="h-100 ma0 pa4 bg-white">
+                <p class="f4 lh-copy mt0">“{{ .text }}”</p>
+                <footer class="flex items-center">
+                  {{ with .avatar }}
+                    <img class="br-100 mr3" style="width: 3rem; height: 3rem; object-fit: cover;" src="{{ urls.RelURL . }}" alt="" loading="lazy">
+                  {{ end }}
+                  <div>
+                    <strong class="db">{{ .name }}</strong>
+                    <span class="f6 mid-gray">{{ .position }}</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with site.Data.clients }}
+    <section class="ph3 ph4-ns pv5">
+      <div class="mw8 center">
+        <h2 class="f2 mt0 mb4 tc">Organizations we work with</h2>
+        <ul class="list pl0 ma0 flex flex-wrap items-center justify-center">
+          {{ range . }}
+            <li class="w-50 w-third-ns pa3 tc">
+              <a href="{{ .url }}" class="dib" rel="noopener noreferrer" target="_blank">
+                <img class="db center mw-100" style="max-height: 6rem;" src="{{ urls.RelURL .image }}" alt="{{ .name }}" loading="lazy">
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ $latestPosts := first 3 (sort (where site.RegularPages "Section" "blog") "Date" "desc") }}
+  {{ with $latestPosts }}
+    <section class="ph3 ph4-ns pv5 bg-light-gray">
+      <div class="mw8 center">
+        <div class="flex items-center justify-between mb3">
+          <h2 class="f2 mt0 mb0">Latest from the blog</h2>
+          <div class="flex">
+            <button class="blog-carousel-control mr2" type="button" data-blog-carousel-direction="-1" aria-label="Previous blog post" title="Previous blog post">
+              <span aria-hidden="true">&#8592;</span>
+            </button>
+            <button class="blog-carousel-control" type="button" data-blog-carousel-direction="1" aria-label="Next blog post" title="Next blog post">
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </div>
+        </div>
+        <div class="flex" id="latest-posts-carousel" role="region" aria-label="Latest blog posts" tabindex="0" style="overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;">
+          {{ range . }}
+            <article class="w-100 flex-shrink-0 pa2" style="flex: 0 0 100%; scroll-snap-align: start;">
+              <a class="db bg-white h-100 pa3 pa4-ns link near-black" href="{{ .RelPermalink }}">
+                  {{ with .Params.banner }}
+                    <img class="db w-100 mb3" style="aspect-ratio: 3/2; object-fit: cover;" src="{{ urls.RelURL . }}" alt="{{ $.Title }}" loading="lazy">
+                  {{ end }}
+                  <time class="f6 mid-gray db mb2" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                  <h3 class="f3 mt0 mb2">{{ .Title }}</h3>
+                  <p class="lh-copy mb0">{{ .Summary | plainify }}</p>
+              </a>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    <script>
+      (function () {
+        var carousel = document.getElementById("latest-posts-carousel");
+        if (!carousel) return;
+        document.querySelectorAll("[data-blog-carousel-direction]").forEach(function (button) {
+          button.addEventListener("click", function () {
+            carousel.scrollBy({
+              left: carousel.clientWidth * Number(button.dataset.blogCarouselDirection),
+              behavior: "smooth"
+            });
+          });
+        });
+      })();
+    </script>
+  {{ end }}
+{{ end }}
