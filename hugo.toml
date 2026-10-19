@@ -1,8 +1,8 @@
 baseurl = "https://www.phxdevops.com/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
 title = "Phoenix DevOps"
-theme = "universal"
+theme = "ananke"
 #themesDir = "../.."
-languageCode = "en-us"
+#languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
 
@@ -67,7 +67,7 @@ imagePreview = true
 [[menu.main]]
     name       = "Services"
     identifier = "menu.services"
-    url        = "/img/services.png"
+    url        = "/services/"
     weight     = 3
 
 [[menu.main]]
@@ -157,7 +157,7 @@ imagePreview = true
 [[menu.main]]
     name       = "Training"
     identifier = "menu.training"
-    url        = "/img/training.png"
+    url        = "/training/"
     weight     = 3
 
 [[menu.main]]
@@ -166,7 +166,7 @@ imagePreview = true
     url        = ""
     weight     = 1
     parent     = "menu.training"
-    post       = 1
+    #post       = 1
 
 [[menu.main]]
     name       = "Basic DevOps Training"
@@ -202,11 +202,11 @@ imagePreview = true
     weight     = 1
     parent     = "section.advanced"
 
-[[menu.main]]
-    name       = "Portfolio"
-    identifier = "menu.portfolio"
-    url        = "/img/devops.jpg"
-    weight     = 3
+# [[menu.main]]
+#     name       = "Portfolio"
+#     identifier = "menu.portfolio"
+#     url        = "/img/devops.jpg"
+#     weight     = 3
 
 # [[menu.main]]
 #     name       = "Portfolio"
@@ -267,10 +267,10 @@ imagePreview = true
 [[menu.main]]
     name       = "About"
     identifier = "section.about"
-    url        = ""
-    weight     = 2
-    parent     = "menu.portfolio"
-    post       = 2
+    url        = "/about/"
+    weight     = 8
+    #parent     = "menu.portfolio"
+    #post       = 2
 
 [[menu.main]]
     name       = "About Us"
@@ -287,10 +287,10 @@ imagePreview = true
 [[menu.main]]
     name       = "Marketing"
     identifier = "section.marketing"
-    url        = ""
-    weight     = 1
-    parent     = "menu.portfolio"
-    post       = 1
+    url        = "/marketing/"
+    weight     = 6
+    #parent     = "menu.portfolio"
+    #post       = 1
 
 [[menu.main]]
     name       = "Packages"
@@ -442,11 +442,16 @@ imagePreview = true
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
+    site_logo = "img/phx-devops-liquid-ice-small.png"
+    favicon = "img/favicon-32x32.png"
     viewMorePostLink = "/blog/"
     author = "Admin"
     defaultKeywords = ["devops", "hugo", "go"]
     mainSections = ["blog"]
     defaultDescription = "Site template made by Devcows using Hugo"
+
+[params.ananke]
+    custom_css = ["theme-toggle.css"]
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')

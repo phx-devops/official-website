@@ -8,6 +8,7 @@ Phoenix DevOps focuses on delivering high-impact services that follow DevOps bes
 
 {{< vimeo 1186720718 >}}
 
+<!--more-->
 ## CI/CD Automation
 We design and implement robust CI/CD pipelines that reduce manual effort and accelerate delivery.
 

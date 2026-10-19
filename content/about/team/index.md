@@ -14,7 +14,8 @@ At Phoenix DevOps, our strength comes from a blend of deep technical expertise, 
 ![Andy](/img/team/andy.jpg)
 **Connect:** [LinkedIn](https://www.linkedin.com/in/anandvijayachandran) • [GitHub](https://github.com/anandvijayan) • [Portfolio](https://anandvijayan.me)
 
-**Role:** Founder & Principal Engineer  
+**Role:** Founder & Principal Consultant  
+<!--more-->
 **Experience:** 20+ years in software development, DevOps, and automation  
 **Specialties:** CI/CD architecture, infrastructure-as-code, security automation, and scaling DevOps practices for enterprises  
 **Approach:** Build repeatable, secure systems that enable teams to focus on delivering value faster  

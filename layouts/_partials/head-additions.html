@@ -1,0 +1,10 @@
+<script>
+  (function () {
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem("phxdevops-theme") === "dark" ? "dark" : "light";
+    } catch (error) {
+      document.documentElement.dataset.theme = "light";
+    }
+  })();
+</script>
+{{- partials.Include "hook.html" (dict "hook" "head-end" "context" .) -}}

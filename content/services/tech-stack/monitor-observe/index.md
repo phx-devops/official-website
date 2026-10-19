@@ -4,6 +4,9 @@ facebook_author = "Anand Vijayan"
 keywords = ["monitoring", "observability", "Prometheus", "Grafana", "ELK stack", "Datadog", "New Relic", "APM", "distributed tracing", "log analytics"]
 +++
 
+Monitoring tracks system health against known metrics and alerts teams when issues arise. Observability uses metrics, logs, and traces to help explain system behavior and diagnose both familiar and unexpected problems.
+
+<!--more-->
 ## Prometheus
 - Open-source time-series database for metrics collection and storage
 - Pull-based monitoring model with service discovery capabilities
